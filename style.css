@@ -10,16 +10,14 @@
 }
 
 :root {
-  --sepia-dk: #774212;
-  --sepia-md: #704214;
-  --sepia-lg: #80613c;
-  --sepia-xl: #857056;
+  --sepia: #f6cca1;
   --dark: #333;
 }
 
 body {
   font-family: 'Imbue', serif;
   line-height: 1.6;
+  background-color: var(--sepia); 
 }
 
 a {
@@ -28,4 +26,8 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.logo {
+  font-family: 'Qwitcher Grypen', cursive;
 }
