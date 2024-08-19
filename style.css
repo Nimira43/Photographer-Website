@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
 :root {
   --sepia-dk: #774212;
   --sepia-md: #704214;
   --sepia-lg: #80613c;
   --sepia-xl: #857056;
+  --dark: #333;
+}
+
+body {
+  font-family: 'Imbue', serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
 }
