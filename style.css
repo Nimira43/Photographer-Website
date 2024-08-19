@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+
+:root {
+  --sepia-dk: #774212;
+  --sepia-md: #704214;
+  --sepia-lg: #80613c;
+  --sepia-xl: #857056;
+}
