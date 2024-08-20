@@ -28,6 +28,54 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-lg {
+  max-width: 1400px;
+}
+
+.container-sm {
+  max-width: 900px;
+}
+
+.header {
+  margin: 1.5rem auto;
+}
+
 .logo {
+  width: 130px;
+  color: var(--dark);
   font-family: 'Qwitcher Grypen', cursive;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-menu a {
+  color: var(--dark);
+  padding: 5px 10px;
+  border-bottom: 1px dotted transparent;
+  transition: border-bottom 1.5s ease-in-out;
+}
+
+.main-menu a:hover {
+  border-bottom: 1px dotted var(--dark);
+}
+
+.current {
+  border-top: 1px dotted var(--dark);
 }
