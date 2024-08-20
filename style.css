@@ -10,14 +10,15 @@
 }
 
 :root {
-  --sepia: #f6cca1;
+  --sepia-dk: #f6c595;
+  --sepia-lg: #f6cca1;
   --dark: #333;
 }
 
 body {
   font-family: 'Imbue', serif;
   line-height: 1.6;
-  background-color: var(--sepia); 
+  background-color: var(--sepia-lg); 
 }
 
 a {
@@ -44,6 +45,7 @@ img {
 
 .header {
   margin: 1.5rem auto;
+  /* background-color: var(--sepia-dk); */
 }
 
 .logo {
@@ -78,4 +80,11 @@ img {
 
 .current {
   border-top: 1px dotted var(--dark);
+}
+
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
