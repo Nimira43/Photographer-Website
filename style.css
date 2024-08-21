@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  --sepia-dk: #f6c595;
+  --sepia-lg: #f6cca1;
+  --dark: #333;
+  --container-lg: 1400px;
+  --container-md: 1100px;
+  --container-sm: 900px;
+}
+
+body {
+  font-family: 'Imbue', serif;
+  line-height: 1.6;
+  background-color: var(--sepia-lg); 
+}
+
+a {
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-primary {
+  background-color: var(--sepia-dk);
+}
+
+.container {
+  max-width: var(--container-md);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-lg {
+  max-width: var(--container-lg);
+}
+
+.container-sm {
+  max-width: var(--container-sm);
+}
+
+.header {
+  margin: 1.5rem auto;
+  /* background-color: var(--sepia-dk); */
+}
+
+.logo {
+  width: 130px;
+  color: var(--dark);
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-menu a {
+  color: var(--dark);
+  padding: 5px 10px;
+  border-bottom: 1px dotted transparent;
+  transition: border-bottom 1.5s ease-in-out;
+}
+
+.main-menu a:hover {
+  border-bottom: 1px dotted var(--dark);
+}
+
+.current {
+  border-top: 1px dotted var(--dark);
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: calc(33.333% - 20px);
+  border-radius: 5px;
+}
+
+.gallery-item img {
+  border-radius: 5px;
+}
+
+.gallery-item:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hero {
+    height: 300px;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+}
