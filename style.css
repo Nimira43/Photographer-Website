@@ -52,7 +52,6 @@ img {
 
 .header {
   margin: 1.5rem auto;
-  /* background-color: var(--sepia-dk); */
 }
 
 .logo {
@@ -123,8 +122,38 @@ img {
   opacity: 0.9;
 }
 
+.footer {
+  border-top: 1px dotted var(--dark);
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer img {
+  width: 120px;
+  height: 35px;
+}
+
+.footer h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+
+}
+
+.footer a {
+  margin: 0.2rem;
+}
+
 @media (max-width: 768px) {
-  .header-flex {
+  .header-flex,
+  .footer-flex {
     flex-direction: column;
     gap: 1.5rem;
   }
